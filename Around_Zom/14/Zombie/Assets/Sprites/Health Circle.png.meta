@@ -1,0 +1,620 @@
+fileFormatVersion: 2
+guid: 5840c0af730eb41e28c033918680246d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7637032836984554198
+    second: Health Circle_0
+  - first:
+      213: -7431619549145384971
+    second: Health Circle_1
+  - first:
+      213: -4679248881804393147
+    second: Health Circle_2
+  - first:
+      213: -9187934278424590903
+    second: Health Circle_3
+  - first:
+      213: -2289014196825280990
+    second: Health Circle_4
+  - first:
+      213: 3977627133102610911
+    second: Health Circle_5
+  - first:
+      213: 2856591383590665034
+    second: Health Circle_6
+  - first:
+      213: -7164128104145685839
+    second: Health Circle_7
+  - first:
+      213: 6994434195815089381
+    second: Health Circle_8
+  - first:
+      213: -6119152235934385867
+    second: Health Circle_9
+  - first:
+      213: -7288073810646961002
+    second: Health Circle_10
+  - first:
+      213: -2956073487160310501
+    second: Health Circle_11
+  - first:
+      213: 8353314707079115385
+    second: Health Circle_12
+  - first:
+      213: -8167671997197291508
+    second: Health Circle_13
+  - first:
+      213: 7683822188150081544
+    second: Health Circle_14
+  - first:
+      213: -6779534873902250255
+    second: Health Circle_15
+  - first:
+      213: 5146667616950730377
+    second: Health Circle_16
+  - first:
+      213: 8278060327439767931
+    second: Health Circle_17
+  - first:
+      213: -7489438184242735035
+    second: Health Circle_18
+  - first:
+      213: 5422262485105262966
+    second: Health Circle_19
+  - first:
+      213: -4052703070103358098
+    second: Health Circle_20
+  - first:
+      213: -5750860623658086584
+    second: Health Circle_21
+  - first:
+      213: -7586188663040678882
+    second: Health Circle_22
+  - first:
+      213: 1058086104063116711
+    second: Health Circle_23
+  - first:
+      213: -3737053809769266716
+    second: Health Circle_24
+  - first:
+      213: -3779266463324803936
+    second: Health Circle_25
+  - first:
+      213: -7661254582039679088
+    second: Health Circle_26
+  - first:
+      213: -5488054294889370948
+    second: Health Circle_27
+  - first:
+      213: -3701957890271823536
+    second: Health Circle_28
+  - first:
+      213: 8589581201008282583
+    second: Health Circle_29
+  - first:
+      213: 1131666907978069385
+    second: Health Circle_30
+  - first:
+      213: 911050409254519193
+    second: Health Circle_31
+  - first:
+      213: 1411584941714736042
+    second: Health Circle_32
+  - first:
+      213: -2967443231137678404
+    second: Health Circle_33
+  - first:
+      213: 551900429602731710
+    second: Health Circle_34
+  - first:
+      213: 5108685079381778018
+    second: Health Circle_35
+  - first:
+      213: -8444077104511875631
+    second: Health Circle_36
+  - first:
+      213: 8278948110572443363
+    second: Health Circle_37
+  - first:
+      213: 5083133885319040591
+    second: Health Circle_38
+  - first:
+      213: 3171723753854830762
+    second: Health Circle_39
+  - first:
+      213: 1333321546541023741
+    second: Health Circle_40
+  - first:
+      213: -384577285181165552
+    second: Health Circle_41
+  - first:
+      213: 6235839440944688689
+    second: Health Circle_42
+  - first:
+      213: 1899478536023552108
+    second: Health Circle_43
+  - first:
+      213: 5052160079809413940
+    second: Health Circle_44
+  - first:
+      213: 7449963385917823687
+    second: Health Circle_45
+  - first:
+      213: 1098848864942053762
+    second: Health Circle_46
+  - first:
+      213: -5911890239243523742
+    second: Health Circle_47
+  - first:
+      213: -5307117051321630626
+    second: Health Circle_48
+  - first:
+      213: 6939570984938487487
+    second: Health Circle_49
+  - first:
+      213: 3639682947203426332
+    second: Health Circle_50
+  - first:
+      213: -4356363630168267736
+    second: Health Circle_51
+  - first:
+      213: 9051541472884766171
+    second: Health Circle_52
+  - first:
+      213: 745375216255530711
+    second: Health Circle_53
+  - first:
+      213: 2704103394147393483
+    second: Health Circle_54
+  - first:
+      213: 5589623777153838246
+    second: Health Circle_55
+  - first:
+      213: -2134477130157589219
+    second: Health Circle_56
+  - first:
+      213: -2051165713304208232
+    second: Health Circle_57
+  - first:
+      213: 8687877239466800778
+    second: Health Circle_58
+  - first:
+      213: 9053770152666137443
+    second: Health Circle_59
+  - first:
+      213: -107677833915965432
+    second: Health Circle_60
+  - first:
+      213: -7856546056614609989
+    second: Health Circle_61
+  - first:
+      213: 8877834880518549514
+    second: Health Circle_62
+  - first:
+      213: -4826992698636869116
+    second: Health Circle_63
+  - first:
+      213: 5194983844947445996
+    second: Health Circle_64
+  - first:
+      213: 8817514589163217687
+    second: Health Circle_65
+  - first:
+      213: 3258772958874973924
+    second: Health Circle_66
+  - first:
+      213: 538365838123117201
+    second: Health Circle_67
+  - first:
+      213: 3099789800055919987
+    second: Health Circle_68
+  - first:
+      213: 8965995347252284529
+    second: Health Circle_69
+  - first:
+      213: 7541122408152031867
+    second: Health Circle_70
+  - first:
+      213: 5218252165788964315
+    second: Health Circle_71
+  - first:
+      213: 5738565838488053249
+    second: Health Circle_72
+  - first:
+      213: 1883270408126218302
+    second: Health Circle_73
+  - first:
+      213: 3985332787433796377
+    second: Health Circle_74
+  - first:
+      213: -4735956058377697827
+    second: Health Circle_75
+  - first:
+      213: 5551502292468387514
+    second: Health Circle_76
+  - first:
+      213: 1342711466713534424
+    second: Health Circle_77
+  - first:
+      213: -8978670804024099871
+    second: Health Circle_78
+  - first:
+      213: 2559729864902198054
+    second: Health Circle_79
+  - first:
+      213: -1076326998430264961
+    second: Health Circle_80
+  - first:
+      213: -8357299505063487437
+    second: Health Circle_81
+  - first:
+      213: -8798047337781463124
+    second: Health Circle_82
+  - first:
+      213: -504095913170774529
+    second: Health Circle_83
+  - first:
+      213: -5411579559538471469
+    second: Health Circle_84
+  - first:
+      213: -6975970431722596473
+    second: Health Circle_85
+  - first:
+      213: 8128087928871281621
+    second: Health Circle_86
+  - first:
+      213: 3138842446908634089
+    second: Health Circle_87
+  - first:
+      213: -7147342064867071209
+    second: Health Circle_88
+  - first:
+      213: -6083648472973605502
+    second: Health Circle_89
+  - first:
+      213: -6352216461047591134
+    second: Health Circle_90
+  - first:
+      213: -4419407189774068638
+    second: Health Circle_91
+  - first:
+      213: -1369269977674241737
+    second: Health Circle_92
+  - first:
+      213: 1385273854321382014
+    second: Health Circle_93
+  - first:
+      213: 6895450389313680499
+    second: Health Circle_94
+  - first:
+      213: 865841163234220543
+    second: Health Circle_95
+  - first:
+      213: 6982264999747961698
+    second: Health Circle_96
+  - first:
+      213: 6578439394388093891
+    second: Health Circle_97
+  - first:
+      213: -932550678391128945
+    second: Health Circle_98
+  - first:
+      213: 7551369102431642854
+    second: Health Circle_99
+  - first:
+      213: -7173562694679312923
+    second: Health Circle_100
+  - first:
+      213: -4111565593861249340
+    second: Health Circle_101
+  - first:
+      213: -3036015021684877060
+    second: Health Circle_102
+  - first:
+      213: 4484342614753013618
+    second: Health Circle_103
+  - first:
+      213: 3358758317493526633
+    second: Health Circle_104
+  - first:
+      213: 8918861749436659662
+    second: Health Circle_105
+  - first:
+      213: -1781208498744886276
+    second: Health Circle_106
+  - first:
+      213: -8936082694356307213
+    second: Health Circle_107
+  - first:
+      213: 4810240680852506322
+    second: Health Circle_108
+  - first:
+      213: -7432665187083507609
+    second: Health Circle_109
+  - first:
+      213: 4068806905912167564
+    second: Health Circle_110
+  - first:
+      213: 8454722111451720990
+    second: Health Circle_111
+  - first:
+      213: -6621286846473015582
+    second: Health Circle_112
+  - first:
+      213: -270559511244451174
+    second: Health Circle_113
+  - first:
+      213: -4992106870419503890
+    second: Health Circle_114
+  - first:
+      213: -4823015361393470601
+    second: Health Circle_115
+  - first:
+      213: 872171417264601802
+    second: Health Circle_116
+  - first:
+      213: 6093083321399310944
+    second: Health Circle_117
+  - first:
+      213: -2022319668277684688
+    second: Health Circle_118
+  - first:
+      213: 6660002499842866187
+    second: Health Circle_119
+  - first:
+      213: 6652331350762710100
+    second: Health Circle_120
+  - first:
+      213: 8320865862850583790
+    second: Health Circle_121
+  - first:
+      213: 845859591400702147
+    second: Health Circle_122
+  - first:
+      213: 3774848143064681878
+    second: Health Circle_123
+  - first:
+      213: -4024328801456344186
+    second: Health Circle_124
+  - first:
+      213: -5252641169603017662
+    second: Health Circle_125
+  - first:
+      213: 4988408268342401690
+    second: Health Circle_126
+  - first:
+      213: -1353340611293016051
+    second: Health Circle_127
+  - first:
+      213: -5806093936578817508
+    second: Health Circle_0
+  - first:
+      213: -4890741917663012841
+    second: Health Circle_1
+  - first:
+      213: -5167192188834367392
+    second: Health Circle_2
+  - first:
+      213: 1607621878410712832
+    second: Health Circle_3
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Health Circle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c129ba1a35c9c6fa0800000000000000
+      internalID: -5806093936578817508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Health Circle_1
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 718559d5328902cb0800000000000000
+      internalID: -4890741917663012841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Health Circle_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 068ba5ac4127a48b0800000000000000
+      internalID: -5167192188834367392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Health Circle_3
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00711d3b49b6f4610800000000000000
+      internalID: 1607621878410712832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: c58d148842e8c49bcaa08b66f6a1fa9c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
