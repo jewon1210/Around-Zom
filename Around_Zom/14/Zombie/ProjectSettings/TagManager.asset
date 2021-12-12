@@ -20,10 +20,10 @@ TagManager:
   - Grenada
   - Zombie
   - Head
-  - 
-  - 
-  - 
-  - 
+  - EnemyHit
+  - EnemyAttack
+  - PlayerHit
+  - PlayerAttack
   - 
   - 
   - 

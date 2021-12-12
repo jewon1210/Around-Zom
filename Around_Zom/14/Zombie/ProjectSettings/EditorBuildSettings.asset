@@ -6,30 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/1Empty Scene.unity
+    path: Assets/3Scenes/Dungeon/1Empty Scene.unity
     guid: ffd9c9ab8283c554d8e822ace14fed76
   - enabled: 1
-    path: Assets/Scenes/2Start Scene.unity
+    path: Assets/3Scenes/Dungeon/2Start Scene.unity
     guid: 7f75933344e282244b62c59fbe2466ac
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/3Stage1 Scene.unity
-    guid: 93f50e1c3d57dfd43a6fc70d1a583476
+    path: Assets/3Scenes/Dungeon/3Dungeon Entrance Scene.unity
+    guid: 0a1e602fbadf2e245a8116bc2010c189
   - enabled: 1
-    path: Assets/Scenes/Option Scene.unity
-    guid: a6fc7f8966c36e64c95df7d1124ce516
-  - enabled: 1
-    path: Assets/Scenes/Tutorial Scene.unity
-    guid: aa9abd978cd63424cb2fd34c3ab3aba5
-  - enabled: 1
-    path: Assets/Scenes/4Stage2 Scene.unity
-    guid: 8d7e1fc5451bbc748b89e331f5e9f089
-  - enabled: 1
-    path: Assets/Scenes/5Stage3 Scene.unity
-    guid: a8a877a162e63ad4c97818066b277107
-  - enabled: 1
-    path: Assets/Scenes/6Ending Scene.unity
-    guid: 5b0adac8bd9139241a9889d672761c45
+    path: Assets/3Scenes/Dungeon/4Dungeon Stage Scene.unity
+    guid: af9c9c8dc7160c244a24984468de7e6d
   m_configObjects: {}
