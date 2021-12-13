@@ -19,17 +19,27 @@ public class PlayerAnimation : MonoBehaviour
 
     Animator PlayerAni;
     AttackAreaScript AttackArea;
+    CharacterStatus Status;//죽는 모션을 위한 추가
+    public GameObject DyingPopUp;//죽고나서 뜨는 팝업
 
     // Start is called before the first frame update
     void Start()
     {
         PlayerAni = gameObject.GetComponentInChildren<Animator>();
         AttackArea = GetComponentInChildren<AttackAreaScript>();
+        Status = transform.root.GetComponent<CharacterStatus>();
+        DyingPopUp.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(Status.Hp <=0)
+        {
+            PlayerAni.SetBool("Dead", true);
+            return;
+        }
+
         MoveMotion();
     }
 
@@ -81,5 +91,10 @@ public class PlayerAnimation : MonoBehaviour
     public void AttackEnd()
     {
         AttackArea.ColliderInactive();
+    }
+
+    public void PlayerDead()
+    {
+        DyingPopUp.SetActive(true);
     }
 }

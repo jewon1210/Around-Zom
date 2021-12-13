@@ -17,10 +17,7 @@ public class CharacterStatus : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Died)
-        {
-            Destroy(gameObject);
-        }
+        
     }
 
     public void Damage(int damage)

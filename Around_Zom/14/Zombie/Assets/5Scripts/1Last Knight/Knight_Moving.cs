@@ -7,12 +7,16 @@ public class Knight_Moving : MonoBehaviour
     Ray cameraRay;
     public float Speed = 2.5f;
 
+    CharacterStatus Status;
     CharacterController Controller;
     Vector3 dir = Vector3.zero;
+    //public GameObject Died; //죽었을때 팝업창->PlayerAnimation으로 이동
 
     bool isRolling = false;
     bool isAttack = false;
+    bool isPause = false;
     float timecheck = 0;
+
 
    
 
@@ -20,28 +24,38 @@ public class Knight_Moving : MonoBehaviour
     void Start()
     {
         Controller = gameObject.GetComponent<CharacterController>();//초기화
-        
+        Status = gameObject.GetComponent<CharacterStatus>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (!isAttack)
+        if(Status.Hp <=0f)
         {
-            if (!isRolling) // 구르지 않거나, 공격하지 않을때만 시점이동 가능하게 구현
-            {
-                Cursor.visible = true;
-                cameraRay = Camera.main.ScreenPointToRay(Input.mousePosition); //마우스를 통한 캐릭터 시점 이동
-                Plane GroupPlane = new Plane(Vector3.up, gameObject.transform.position);
-                float rayLength;
+            //Died.SetActive(true); PlayerAnimation 스크립트로 이동
+            return;
+        }
 
-                if (GroupPlane.Raycast(cameraRay, out rayLength))
+        if (!isPause)
+        {
+            if (!isAttack)
+            {
+                if (!isRolling) // 구르지 않거나, 공격하지 않을때만 시점이동 가능하게 구현
                 {
-                    Vector3 pointTolook = cameraRay.GetPoint(rayLength);
-                    transform.LookAt(new Vector3(pointTolook.x, transform.position.y, pointTolook.z));
+                    Cursor.visible = true;
+                    cameraRay = Camera.main.ScreenPointToRay(Input.mousePosition); //마우스를 통한 캐릭터 시점 이동
+                    Plane GroupPlane = new Plane(Vector3.up, gameObject.transform.position);
+                    float rayLength;
+
+                    if (GroupPlane.Raycast(cameraRay, out rayLength))
+                    {
+                        Vector3 pointTolook = cameraRay.GetPoint(rayLength);
+                        transform.LookAt(new Vector3(pointTolook.x, transform.position.y, pointTolook.z));
+                    }
                 }
             }
         }
+
         Moving();
     }
 
@@ -96,10 +110,19 @@ public class Knight_Moving : MonoBehaviour
             }
         }
 
-            else if (timecheck >= 1f && isAttack)//공격 시 다른 행동 안되게
-            {
-                isAttack = false;
-            }
-        
-        }
+        else if (timecheck >= 1f && isAttack)//공격 시 다른 행동 안되게
+        {
+         isAttack = false;
+        }        
     }
+
+    public void isPaused()
+    {
+        isPause = true;
+    }
+
+    public void isResume()
+    {
+        isPause = false;
+    }
+}
