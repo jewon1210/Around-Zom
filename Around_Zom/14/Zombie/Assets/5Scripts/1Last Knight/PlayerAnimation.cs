@@ -21,6 +21,11 @@ public class PlayerAnimation : MonoBehaviour
     AttackAreaScript AttackArea;
     CharacterStatus Status;//죽는 모션을 위한 추가
     public GameObject DyingPopUp;//죽고나서 뜨는 팝업
+    public GameObject HitArea;
+    Collider HitCollider;
+    public ParticleSystem QSkill;
+    public Knight_Moving KnightMoving;
+    float CoolTime = 7.0f;
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +34,8 @@ public class PlayerAnimation : MonoBehaviour
         AttackArea = GetComponentInChildren<AttackAreaScript>();
         Status = transform.root.GetComponent<CharacterStatus>();
         DyingPopUp.SetActive(false);
+        HitCollider = HitArea.GetComponent<Collider>();
+        KnightMoving = transform.root.GetComponent<Knight_Moving>(); 
     }
 
     // Update is called once per frame
@@ -45,6 +52,8 @@ public class PlayerAnimation : MonoBehaviour
 
     private void MoveMotion()
     {
+        CoolTime += Time.deltaTime;
+
         if(Input.GetButtonDown("Fire1"))
         {
             PlayerAni.SetTrigger("Attack");
@@ -55,6 +64,12 @@ public class PlayerAnimation : MonoBehaviour
             PlayerAni.SetTrigger("Roll");
         }
 
+        if (Input.GetKeyDown(KeyCode.Q) && CoolTime >= 7.0f)
+        {
+            PlayerAni.SetTrigger("QSkill");
+            CoolTime = 0;
+        }
+
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
         {
             if (Input.GetKey(KeyCode.LeftShift))
@@ -62,11 +77,13 @@ public class PlayerAnimation : MonoBehaviour
                 PlayerAni.SetTrigger("StartRun");
                 PlayerAni.SetInteger("State", (int)State.Running);// 확실하게 찾게!
             }
+
             else
             {
                 PlayerAni.SetInteger("State", (int)State.Walking);
             }
         }
+
         else if (Input.GetKey(KeyCode.S))
         {
             PlayerAni.SetInteger("State", (int)State.BackWalking);
@@ -97,4 +114,18 @@ public class PlayerAnimation : MonoBehaviour
     {
         DyingPopUp.SetActive(true);
     }
+
+    public void QSkillStart()
+    {
+        QSkill.Play();
+        HitCollider.enabled = false;
+    }
+
+    public void QSkillEnd()
+    {
+        KnightMoving.isQSkillOff();
+        Status.Healing();
+        HitCollider.enabled = true;
+    }
+
 }

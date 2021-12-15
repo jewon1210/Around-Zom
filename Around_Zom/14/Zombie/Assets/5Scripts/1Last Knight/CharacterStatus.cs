@@ -30,4 +30,14 @@ public class CharacterStatus : MonoBehaviour
             Died = true;
         }
     }
+
+    public void Healing()
+    {
+        Hp += (int)(MaxHp * 0.3f);
+
+        if(Hp >= MaxHp)
+        {
+            Hp = MaxHp;
+        }
+    }
 }

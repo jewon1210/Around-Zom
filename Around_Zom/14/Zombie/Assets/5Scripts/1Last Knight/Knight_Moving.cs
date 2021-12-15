@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Knight_Moving : MonoBehaviour
 {
@@ -15,16 +16,20 @@ public class Knight_Moving : MonoBehaviour
     bool isRolling = false;
     bool isAttack = false;
     bool isPause = false;
+    bool isQSkill = false;
+
     float timecheck = 0;
+    float CoolTime = 0;
+    public float MaxCoolTime = 7.0f;
 
-
-   
+    public Image Filler;
 
     // Start is called before the first frame update
     void Start()
     {
-        Controller = gameObject.GetComponent<CharacterController>();//초기화
+        Controller = gameObject.GetComponent<CharacterController>(); //초기화
         Status = gameObject.GetComponent<CharacterStatus>();
+        Filler.fillAmount = CoolTime;
     }
 
     // Update is called once per frame
@@ -35,28 +40,37 @@ public class Knight_Moving : MonoBehaviour
             //Died.SetActive(true); PlayerAnimation 스크립트로 이동
             return;
         }
-
-        if (!isPause)
+        if (!isQSkill)
         {
-            if (!isAttack)
+            if (!isPause)
             {
-                if (!isRolling) // 구르지 않거나, 공격하지 않을때만 시점이동 가능하게 구현
+                if (!isAttack)
                 {
-                    Cursor.visible = true;
-                    cameraRay = Camera.main.ScreenPointToRay(Input.mousePosition); //마우스를 통한 캐릭터 시점 이동
-                    Plane GroupPlane = new Plane(Vector3.up, gameObject.transform.position);
-                    float rayLength;
-
-                    if (GroupPlane.Raycast(cameraRay, out rayLength))
+                    if (!isRolling) // 구르지 않거나, 공격하지 않을때만 시점이동 가능하게 구현
                     {
-                        Vector3 pointTolook = cameraRay.GetPoint(rayLength);
-                        transform.LookAt(new Vector3(pointTolook.x, transform.position.y, pointTolook.z));
+                        Cursor.visible = true;
+                        cameraRay = Camera.main.ScreenPointToRay(Input.mousePosition); //마우스를 통한 캐릭터 시점 이동
+                        Plane GroupPlane = new Plane(Vector3.up, gameObject.transform.position);
+                        float rayLength;
+
+                        if (GroupPlane.Raycast(cameraRay, out rayLength))
+                        {
+                            Vector3 pointTolook = cameraRay.GetPoint(rayLength);
+                            transform.LookAt(new Vector3(pointTolook.x, transform.position.y, pointTolook.z));
+                        }
                     }
                 }
             }
+
+            Moving();
         }
 
-        Moving();
+        if(CoolTime>0)
+        {
+            CoolTime -= Time.deltaTime;
+            Filler.fillAmount = CoolTime / MaxCoolTime;
+        }
+
     }
 
     void Moving()
@@ -65,6 +79,13 @@ public class Knight_Moving : MonoBehaviour
         {
             isAttack = true;
             timecheck = 0;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Q) && CoolTime <= 0)
+        {
+            isQSkill = true;
+            timecheck = 0;
+            CoolTime = 7.0f;/////////////////////////////////////////////////////////////
         }
 
         timecheck += Time.deltaTime;//frame초단위로
@@ -76,7 +97,6 @@ public class Knight_Moving : MonoBehaviour
                 if (Input.GetKey(KeyCode.LeftShift))//달리기
                 {
                     Speed = 4f;
-
                 }
                 else
                 {
@@ -96,6 +116,7 @@ public class Knight_Moving : MonoBehaviour
                     isRolling = true;
                     timecheck = 0;
                 }
+
                 else
                     dir = dir.normalized * Speed;
             }
@@ -124,5 +145,10 @@ public class Knight_Moving : MonoBehaviour
     public void isResume()
     {
         isPause = false;
+    }
+
+    public void isQSkillOff()
+    {
+        isQSkill = false;
     }
 }
