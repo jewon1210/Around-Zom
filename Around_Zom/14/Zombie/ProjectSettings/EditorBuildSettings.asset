@@ -16,5 +16,8 @@ EditorBuildSettings:
     guid: 0a1e602fbadf2e245a8116bc2010c189
   - enabled: 1
     path: Assets/3Scenes/Dungeon/4Dungeon Stage Scene.unity
-    guid: af9c9c8dc7160c244a24984468de7e6d
+    guid: 1e953eaff41363d42ab693f235c8bf53
+  - enabled: 1
+    path: Assets/3Scenes/Dungeon/6Ending Scene.unity
+    guid: dc6e74b67f52bbc49ba3fa42782ed264
   m_configObjects: {}

@@ -2455,3 +2455,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HpFiller: {fileID: 0}
   Status: {fileID: 0}
+  HpbarBackGround: {fileID: 6101976380742073021}

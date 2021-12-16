@@ -151,4 +151,10 @@ public class Knight_Moving : MonoBehaviour
     {
         isQSkill = false;
     }
+
+    public void Warp(Vector3 Pos)
+    {
+        Debug.Log("Warp");
+        gameObject.transform.position = Pos; // Trap스크립트에서 워프용도
+    }
 }

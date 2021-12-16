@@ -30,6 +30,7 @@ public class Scene_Manager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Screen.SetResolution(1920,1080,true);
         CurPos = Current.StartScene;
         SceneManager.LoadScene("2Start Scene");
     }

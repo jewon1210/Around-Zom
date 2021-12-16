@@ -95,12 +95,20 @@ public class Zombie_Moving : MonoBehaviour
     public void MobDead()
     {
         KeyManager Key = FindObjectOfType<KeyManager>();
-        
+        TrapRoomScript GetRoom = FindObjectOfType<TrapRoomScript>(); 
+
         if(Key != null)
         {
             Debug.Log("Key");
             Key.SendMessage("MobDead");
-            Destroy(gameObject);
         }
+
+        if (GetRoom != null)
+        {
+            Debug.Log("GetRoom");
+            GetRoom.SendMessage("MobDied");
+        }
+
+        Destroy(gameObject);
     }
 }
